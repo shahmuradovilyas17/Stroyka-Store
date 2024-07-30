@@ -1,0 +1,40 @@
+.slider-item {
+  max-width: 1360px;
+  margin: 0 auto;
+  margin-top: 40px;
+  position: relative;
+
+  .slider-item-title {
+    max-width: 570px;
+    color: #171b24;
+    font-size: 48px;
+    line-height: 57.6px;
+    font-family: "Manrope-Bold";
+    position: absolute;
+    left: 100px;
+    top: 40px;
+  }
+
+  .slider-item-desc {
+    max-width: 570px;
+    font-family: "Manrope-Regular";
+    font-size: 20px;
+    line-height: 28px;
+    color: #454950;
+    position: absolute;
+    left: 100px;
+    top: 176px;
+  }
+
+  .slider-item-button {
+    background-color: #fcec41;
+    padding: 12px 24px;
+    border: none;
+    font-family: "Manrope-Medium";
+    font-size: 18px;
+    line-height: 24.48px;
+    position: absolute;
+    bottom: 40px;
+    left: 100px;
+  }
+}
