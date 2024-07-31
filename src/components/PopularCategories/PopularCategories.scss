@@ -1,0 +1,30 @@
+.popular-categories {
+  max-width: 1160px;
+  margin: 0 auto;
+  margin-top: 80px;
+
+  &-top {
+    display: flex;
+    justify-content: space-between;
+
+    &-title {
+      font-family: "Manrope-SemiBold";
+      font-size: 34px;
+      line-height: 44.2px;
+      color: #2f323a;
+    }
+
+    &-all {
+      padding: 12px 48px 12px 24px;
+      border: 1px solid #d1d1d3;
+      background-color: #ffffff;
+      font-family: "Manrope-Medium";
+      font-size: 18px;
+      line-height: 24.48px;
+      color: #171b24;
+      background-image: url(../../assets/images/right-arrow-icon.svg);
+      background-repeat: no-repeat;
+      background-position: 158px;
+    }
+  }
+}
