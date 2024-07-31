@@ -1,0 +1,12 @@
+export { default as category1 } from "../../assets/images/categories/category-1.png";
+export { default as category2 } from "../../assets/images/categories/category-2.png";
+export { default as category3 } from "../../assets/images/categories/category-3.png";
+export { default as category4 } from "../../assets/images/categories/category-4.png";
+export { default as category5 } from "../../assets/images/categories/category-5.png";
+export { default as category6 } from "../../assets/images/categories/category-6.png";
+export { default as category7 } from "../../assets/images/categories/category-7.png";
+export { default as category8 } from "../../assets/images/categories/category-8.png";
+export { default as category9 } from "../../assets/images/categories/category-9.png";
+export { default as category10 } from "../../assets/images/categories/category-10.png";
+export { default as category11 } from "../../assets/images/categories/category-11.png";
+export { default as category12 } from "../../assets/images/categories/category-12.png";

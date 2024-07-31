@@ -6,6 +6,7 @@
   &-top {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 16px;
 
     &-title {
       font-family: "Manrope-SemiBold";
@@ -26,5 +27,11 @@
       background-repeat: no-repeat;
       background-position: 158px;
     }
+  }
+
+  &-items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
   }
 }
