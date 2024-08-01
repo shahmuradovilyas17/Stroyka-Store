@@ -78,12 +78,16 @@ export const PopularCategoriesItem = () => {
     },
   ];
 
-  return categories.map((category) => {
-    return (
-      <div className="category-item" id={category.id}>
-        <div className="category-item-name">{category.name}</div>
-        <img src={category.image} alt={category.name} />
-      </div>
-    );
-  });
+  return (
+    <div className="category-items">
+      {categories.map((category) => {
+        return (
+          <div className="category-item" id={category.id}>
+            <div className="category-item-name">{category.name}</div>
+            <img src={category.image} alt={category.name} />
+          </div>
+        );
+      })}
+    </div>
+  );
 };

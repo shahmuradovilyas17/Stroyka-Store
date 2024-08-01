@@ -1,17 +1,23 @@
-.category-item {
-  background-color: #f6f6f6;
-  margin-right: 16px;
-  margin-bottom: 16px;
+.category-items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
 
-  &:nth-child(6n) {
-    margin-right: 0;
-  }
-  &-name {
-    padding: 12px 12px 16px 12px;
-    font-family: "Manrope-Medium";
-    font-size: 18px;
-    line-height: 24.48px;
-    color: #2f323a;
-    text-align: center;
+  .category-item {
+    background-color: #f6f6f6;
+    margin-right: 16px;
+    margin-bottom: 16px;
+
+    &:nth-child(6n) {
+      margin-right: 0;
+    }
+    &-name {
+      padding: 12px 12px 16px 12px;
+      font-family: "Manrope-Medium";
+      font-size: 18px;
+      line-height: 24.48px;
+      color: #2f323a;
+      text-align: center;
+    }
   }
 }
