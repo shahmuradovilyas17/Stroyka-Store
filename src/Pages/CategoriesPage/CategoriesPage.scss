@@ -1,0 +1,22 @@
+.all-categories {
+  max-width: 1160px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.all-categories-frame {
+  max-width: 1360px;
+  margin: 0 auto;
+  margin-top: 40px;
+  position: relative;
+
+  &-title {
+    position: absolute;
+    left: 100px;
+    top: 84px;
+    line-height: 57.6px;
+    font-size: 48px;
+    color: #171b24;
+    font-family: "Manrope-Bold";
+  }
+}
