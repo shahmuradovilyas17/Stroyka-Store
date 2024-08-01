@@ -1,3 +1,4 @@
+import { Footer } from "./components/Footer/Footer";
 import { Header } from "./components/Header/header";
 import { PopularCategories } from "./components/PopularCategories/PopularCategories";
 import { Products } from "./components/Products/Products";
@@ -10,6 +11,7 @@ export const App = () => {
       <Slider />
       <PopularCategories />
       <Products />
+      <Footer />
     </>
   );
 };
