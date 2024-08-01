@@ -6,7 +6,7 @@ import "./SelectedCategoryPage.scss";
 
 export const SelectedCategoryPage = () => {
   const catId = useParams();
-  const { categories, products, setProducts } = useContext(Context);
+  const { categories, products } = useContext(Context);
 
   const [selectedCategory, setSelectedCategory] = useState(" ");
   const [selectedProducts, setSelectedProducts] = useState([]);

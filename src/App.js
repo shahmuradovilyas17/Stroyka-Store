@@ -20,6 +20,7 @@ import {
   category12,
 } from "./components/PopularCategoriesItem/images";
 import { SelectedCategoryPage } from "./Pages/SelectedCategoryPage/SelectedCategoryPage";
+import { SelectedProductPage } from "./Pages/SelectedProductPage/SelectedProductPage";
 
 export const Context = createContext();
 
@@ -314,6 +315,10 @@ export const App = () => {
             <Route
               path="/categories/:categoryId"
               element={<SelectedCategoryPage />}
+            />
+            <Route
+              path="/products/:productId"
+              element={<SelectedProductPage />}
             />
           </Routes>
           <Footer />

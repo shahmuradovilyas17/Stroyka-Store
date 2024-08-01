@@ -1,0 +1,101 @@
+.selected-product {
+  max-width: 1160px;
+  margin: 0 auto;
+  margin-top: 40px;
+
+  &-content {
+    display: flex;
+    margin-bottom: 40px;
+
+    .selected-product-image {
+      border: 1px solid #e8e9ea;
+      border-right: none;
+      width: 572px;
+      height: 428px;
+    }
+
+    .selected-product-text {
+      max-width: 588px;
+      max-height: 428px;
+      padding: 24px;
+      border: 1px solid #e8e9ea;
+
+      .selected-product-name {
+        font-family: "Manrope-SemiBold";
+        font-size: 34px;
+        line-height: 44.2px;
+        color: #171b24;
+        margin-bottom: 46px;
+      }
+
+      .selected-product-price {
+        font-family: "Manrope-SemiBold";
+        font-size: 24px;
+        line-height: 31.2px;
+        color: #171b24;
+        margin-bottom: 24px;
+      }
+      .selected-product-cart-bar {
+        display: flex;
+        margin-bottom: 143px;
+
+        .selected-product-cart {
+          padding: 12px 80px;
+          font-family: "Manrope-Medium";
+          line-height: 24.48px;
+          font-size: 18px;
+          color: #171b24;
+          background-color: #fcec41;
+          border: none;
+          margin-right: 12px;
+        }
+
+        .selected-product-count-bar {
+          display: flex;
+
+          .selected-product-count-button {
+            width: 48px;
+            height: 48px;
+            padding: 12px;
+            background-color: #ffffff;
+            border: 1px solid #d1d1d3;
+          }
+
+          .selected-product-count {
+            width: 48px;
+            height: 48px;
+            padding: 12px;
+            border-bottom: 1px solid #d1d1d3;
+            border-top: 1px solid #d1d1d3;
+            font-family: "Manrope-Medium";
+            line-height: 24.48px;
+            font-size: 18px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  .selected-product-desc {
+    padding: 60px 196px;
+    border: 1px solid #e8e9ea;
+    border-radius: 10px;
+    margin-bottom: 80px;
+
+    &-title {
+      font-family: "Manrope-SemiBold";
+      font-size: 34px;
+      line-height: 44.2px;
+      color: #171b24;
+      margin-bottom: 20px;
+    }
+
+    &-text {
+      font-family: "Manrope-Regular";
+      font-size: 16px;
+      line-height: 24px;
+      color: #2f323a;
+    }
+  }
+}
