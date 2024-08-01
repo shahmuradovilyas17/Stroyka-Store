@@ -37,7 +37,7 @@ export const Slider = () => {
       >
         {sliderItems.map((item) => {
           return (
-            <SwiperSlide>
+            <SwiperSlide key={item.id}>
               <div className="slider-item" key={item.id}>
                 <div className="slider-item-title">{item.title}</div>
                 <div className="slider-item-desc">{item.desc}</div>

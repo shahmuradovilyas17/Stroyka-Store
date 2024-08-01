@@ -1,13 +1,9 @@
-import { useContext } from "react";
 import "./ProductsItem.scss";
-import { Context } from "../../App";
 
-export const ProductsItem = () => {
-  const { products } = useContext(Context);
-
-  return products.map((product) => {
+export const ProductsItem = ({ children }) => {
+  return children.map((product) => {
     return (
-      <div className="products-item" id={product.id}>
+      <div className="products-item" key={product.id}>
         <div className="products-item-img">
           <img src={product.img} alt={product.descr} />
         </div>

@@ -19,6 +19,7 @@ import {
   category11,
   category12,
 } from "./components/PopularCategoriesItem/images";
+import { SelectedCategoryPage } from "./Pages/SelectedCategoryPage/SelectedCategoryPage";
 
 export const Context = createContext();
 
@@ -91,7 +92,7 @@ export const App = () => {
       id: 1,
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMWX_3n_PIedlWOW_CGauG4b1-XQzFYScF4w&s",
       descr: "Профиль 0,55мм для гипсокартона",
-      category: "Строительные материалы",
+      category: "Пиломатериалы",
       price: 300,
     },
     {
@@ -105,7 +106,7 @@ export const App = () => {
       id: 3,
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu9EXML_U_xsr9_BhbbWEGxDhVVKqwR1qZ7A&s",
       descr: "Кнауф Мп 75 штукатурка",
-      category: "Строительные материалы",
+      category: "Пиломатериалы",
       price: 500,
     },
     {
@@ -119,7 +120,7 @@ export const App = () => {
       id: 5,
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeabTuZEoY2rfnFngRs1skC5WBzbF_ZLT_gw&s",
       descr: "Knauf Ротбанд, 30 кг",
-      category: "Строительные материалы",
+      category: "Пиломатериалы",
       price: 600,
     },
     {
@@ -133,14 +134,14 @@ export const App = () => {
       id: 7,
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnujTDRngRqjPA_vQKXlMES6YFmSxVUlLCyA&s",
       descr: "Шпатлевка универсальная",
-      category: "Строительные материалы",
+      category: "Пиломатериалы",
       price: 700,
     },
     {
       id: 8,
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrwLWq2EK-B24ynWO4xBgcpBJ4sJWta1IOgg&s",
       descr: "Клейкая лента металлизированная",
-      category: "Строительные материалы",
+      category: "Пиломатериалы",
       price: 100,
     },
     {
@@ -168,7 +169,7 @@ export const App = () => {
       id: 12,
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGA25AtQyydS0hojFBBenGKQYb-6h8xoE8iQ&s",
       descr: "Гипсокартон влагостойкий",
-      category: "Строительные материалы",
+      category: "Пиломатериалы",
       price: 400,
     },
     {
@@ -196,7 +197,7 @@ export const App = () => {
       id: 16,
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL01yAXWW5-uErEVBdC0pIKsM-Oc4MVdvg7A&s",
       descr: "Цемент М500, 25 кг",
-      category: "Строительные материалы",
+      category: "Пиломатериалы",
       price: 350,
     },
     {
@@ -259,7 +260,7 @@ export const App = () => {
       id: 25,
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToQYKis2aZ5ssa4jZugO-wgs5O6jnj1JSlow&s",
       descr: "Кирпич красный строительный",
-      category: "Строительные материалы",
+      category: "Пиломатериалы",
       price: 20,
     },
     {
@@ -301,13 +302,19 @@ export const App = () => {
 
   return (
     <>
-      <Context.Provider value={{ categories, products }}>
+      <Context.Provider
+        value={{ categories, products, setProducts, setCategories }}
+      >
         <BrowserRouter>
           <Header />
           <Routes>
             <Route path="/" element={<MainPage />} />
             <Route path="/cart" element={<CartPage />} />
             <Route path="/categories" element={<CategoriesPage />} />
+            <Route
+              path="/categories/:categoryId"
+              element={<SelectedCategoryPage />}
+            />
           </Routes>
           <Footer />
         </BrowserRouter>
