@@ -39,9 +39,9 @@ export const Slider = () => {
           return (
             <SwiperSlide key={item.id}>
               <div className="slider-item" key={item.id}>
+                <img src={item.image} alt="slider" />
                 <div className="slider-item-title">{item.title}</div>
                 <div className="slider-item-desc">{item.desc}</div>
-                <img src={item.image} alt="slider" />
                 <button className="slider-item-button">Подробнее</button>
               </div>
             </SwiperSlide>

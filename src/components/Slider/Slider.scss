@@ -38,3 +38,57 @@
     left: 100px;
   }
 }
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  left: auto;
+  top: auto;
+  bottom: 40px;
+  opacity: 1;
+  background-color: #fff;
+  border: 1px solid #d1d1d3;
+}
+.swiper-button-next {
+  right: 352px;
+  &:after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: url("../../assets/images/arrowBlack.svg") no-repeat;
+    transition: all 0.4 ease;
+    position: absolute;
+  }
+  &:hover,
+  &:active {
+    background-color: #2f323a;
+
+    &::after {
+      background: url("../../assets/images/arrowWhite.svg") no-repeat;
+    }
+  }
+}
+.swiper-button-prev {
+  right: 412px;
+  &:after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: url("../../assets/images/arrowBlack.svg") no-repeat;
+    transform: rotate(180deg);
+
+    position: absolute;
+  }
+  &:hover,
+  &:active {
+    background-color: #2f323a;
+
+    &::after {
+      background: url("../../assets/images/arrowWhite.svg") no-repeat;
+    }
+  }
+}

@@ -5,8 +5,7 @@ import { Context } from "../../App";
 
 export const SelectedProduct = (props) => {
   const product = props.product;
-  const { products, setCartProducts, cartProducts, prodCount, setProdCount } =
-    useContext(Context);
+  const { products, setCartProducts, prodCount } = useContext(Context);
   const countObj = {
     count: prodCount,
   };
@@ -19,10 +18,8 @@ export const SelectedProduct = (props) => {
         });
       }
     });
-    console.log(cartProducts);
   };
 
-  console.log(cartProducts);
   return (
     <div className="selected-product" key={product.id} id={product.id}>
       <div className="selected-product-content">

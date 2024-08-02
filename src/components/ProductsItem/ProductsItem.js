@@ -26,7 +26,7 @@ export const ProductsItem = ({ children }) => {
           </div>
           {countVisible ? (
             <>
-              <CartCountBar padding={{ padding: "6px 6px" }} />
+              <CartCountBar padding={{ padding: "6px 6px" }} id={product.id} />
               <button
                 className="products-item-content-cancel"
                 onClick={() => {
