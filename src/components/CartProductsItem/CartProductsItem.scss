@@ -1,0 +1,65 @@
+.cart-products {
+  max-width: 866px;
+  margin: 0 auto;
+
+  &-item {
+    display: flex;
+    margin-bottom: 16px;
+
+    &-image {
+      border: 1px solid #e8e9ea;
+    }
+
+    &-content {
+      padding: 16px;
+
+      &-name {
+        color: #2f323a;
+        font-family: "Manrope-Medium";
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 24px;
+      }
+
+      &-price {
+        color: #171b24;
+        font-family: "Manrope-Bold";
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 16px;
+      }
+
+      &-count-bar {
+        display: flex;
+
+        .cart-products-item-content-count-button {
+          width: 48px;
+          height: 48px;
+          background-color: transparent;
+          border: 1px solid #d1d1d3;
+        }
+
+        .cart-products-item-content-count {
+          font-family: "Manrope-Medium";
+          color: #171b24;
+          font-size: 18px;
+          line-height: 22px;
+          padding: 12px 40px;
+          border-top: 1px solid #d1d1d3;
+          border-bottom: 1px solid #d1d1d3;
+        }
+
+        .cart-products-item-content-count-delete {
+          margin-left: 12px;
+          background-color: transparent;
+          border: 1px solid #d1d1d3;
+          padding: 12px 68px;
+          font-family: "Manrope-Medium";
+          color: #171b24;
+          font-size: 18px;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+}

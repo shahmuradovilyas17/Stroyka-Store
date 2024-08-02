@@ -1,24 +1,9 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import "./CartCountBar.scss";
 import { Context } from "../../App";
 
-export const CartCountBar = ({ padding, id }) => {
-  const [prodCount, setProdCount] = useState(1);
-  const [cartProducts, setCartProducts] = useState([]);
-  const { products } = useContext(Context);
-
-  const addProduct = () => {
-    products.forEach((product) => {
-      if (product.id === id) {
-        setCartProducts((prevState) => {
-          return prevState.concat([{ product, prodCount }]);
-        });
-      }
-    });
-  };
-
-  console.log(cartProducts);
-
+export const CartCountBar = ({ padding, addProduct }) => {
+  const { setProdCount, prodCount } = useContext(Context);
   const inc = () => {
     setProdCount((prevState) => {
       return prevState + 1;

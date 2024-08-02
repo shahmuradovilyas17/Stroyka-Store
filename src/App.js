@@ -320,10 +320,23 @@ export const App = () => {
     },
   ]);
 
+  const [cartProducts, setCartProducts] = useState([]);
+
+  const [prodCount, setProdCount] = useState(1);
+
   return (
     <>
       <Context.Provider
-        value={{ categories, products, setProducts, setCategories }}
+        value={{
+          categories,
+          products,
+          setProducts,
+          setCategories,
+          cartProducts,
+          setCartProducts,
+          prodCount,
+          setProdCount,
+        }}
       >
         <BrowserRouter>
           <Header />
