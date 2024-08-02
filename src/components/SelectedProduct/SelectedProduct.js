@@ -1,9 +1,10 @@
+import { CartCountBar } from "../CartCountBar/CartCountBar";
 import "./SelectedProduct.scss";
 
 export const SelectedProduct = (props) => {
   const product = props.product;
   return (
-    <div className="selected-product">
+    <div className="selected-product" key={product.id} id={product.id}>
       <div className="selected-product-content">
         <div className="selected-product-image">
           <img src={product.img} alt="product" />
@@ -11,14 +12,7 @@ export const SelectedProduct = (props) => {
         <div className="selected-product-text">
           <div className="selected-product-name">{product.descr}</div>
           <div className="selected-product-price">{product.price}₽</div>
-          <div className="selected-product-cart-bar">
-            <button className="selected-product-cart">В корзину</button>
-            <div className="selected-product-count-bar">
-              <button className="selected-product-count-button">+</button>
-              <div className="selected-product-count">0</div>
-              <button className="selected-product-count-button">-</button>
-            </div>
-          </div>
+          <CartCountBar padding={{ padding: "12px 80px" }} id={product.id} />
         </div>
       </div>
       <div className="selected-product-desc">

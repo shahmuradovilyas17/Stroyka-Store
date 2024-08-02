@@ -1,0 +1,17 @@
+.cart-frame {
+  max-width: 1360px;
+  margin: 0 auto;
+  margin-top: 40px;
+  position: relative;
+  margin-bottom: 40px;
+
+  &-title {
+    position: absolute;
+    left: 100px;
+    top: 84px;
+    line-height: 57.6px;
+    font-size: 48px;
+    color: #171b24;
+    font-family: "Manrope-Bold";
+  }
+}

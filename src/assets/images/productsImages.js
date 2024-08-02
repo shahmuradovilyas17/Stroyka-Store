@@ -1,0 +1,16 @@
+export { default as product1 } from "./products/product-1.jpg";
+export { default as product2 } from "./products/product-2.jpg";
+export { default as product3 } from "./products/product-3.jpg";
+export { default as product4 } from "./products/product-4.jpg";
+export { default as product5 } from "./products/product-5.jpg";
+export { default as product6 } from "./products/product-6.jpg";
+export { default as product7 } from "./products/product-7.jpg";
+export { default as product8 } from "./products/product-8.jpg";
+export { default as product9 } from "./products/product-9.jpg";
+export { default as product10 } from "./products/product-10.jpg";
+export { default as product11 } from "./products/product-11.jpg";
+export { default as product12 } from "./products/product-12.jpg";
+export { default as product13 } from "./products/product-13.jpg";
+export { default as product14 } from "./products/product-14.jpg";
+export { default as product15 } from "./products/product-15.jpg";
+export { default as product16 } from "./products/product-16.jpg";
